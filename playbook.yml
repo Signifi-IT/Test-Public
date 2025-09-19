@@ -1,0 +1,8 @@
+---
+- name: testing autentication
+  hosts: all
+  become: true
+  become_user: root
+  tasks: 
+    - name: pinging all hosts
+	  ansible.builtin.ping:
